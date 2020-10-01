@@ -19,6 +19,7 @@ var userRoutes = require('./routes/user.js');
 var app = express();
 
 
+
 //had to use the below connection function for mongoose. it is diff from the video (to avoid error).
 mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true ,useUnifiedTopology: true});
 require('./config/passport');
